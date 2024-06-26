@@ -9,3 +9,8 @@ body{
 .Texto{
   background-color: yellow;
 }
+.Navbar{
+  background-color: black;
+  padding: 50px;
+  margin: 10px;
+}

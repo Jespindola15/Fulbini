@@ -134,3 +134,27 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width:675px) {
+  .Navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pokemon-todos {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width:370px) {
+  .header2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 150px;
+    margin-left: 30px;
+  }
+}

@@ -131,9 +131,7 @@ h1{
     
   }
   
-  #randomBtn {
-    margin-top: 200px;
-  }
+
   
   .titulo {
     color: white;
@@ -312,4 +310,9 @@ ul button:active {
  
 .card:hover {
     box-shadow: white (1,0,0,0);
+}
+
+.texto{
+  margin: 5px;
+  padding: 5px;
 }

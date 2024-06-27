@@ -1,14 +1,15 @@
 h1{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 body{
-  background-color: rgb(255, 255, 255);
+  background-image: url(/Imagenes/fondopoke.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
-.Texto{
-  background-color: yellow;
-}
+
 .Navbar{
   background-color: rgba(0, 0, 0, 0);
   padding: 50px;

@@ -350,6 +350,10 @@ ul button:active {
                          "pokemon3 pokemon4"
                          "pokemon5 pokemon6";
   }
+
+  .bodyteam{
+    background-color: black;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -361,12 +365,18 @@ ul button:active {
                          "pokemon5" 
                          "pokemon6";
   }
+  .bodyteam{
+    background-color: black;
+  }
 }
 
 @media screen and (max-width:500px) {
 
   #randomBtn {
     padding: 30px;
+  }
+  .bodyteam{
+    background-color: black;
   }
 
   #pokeCard {

@@ -321,3 +321,10 @@ ul button:active {
   margin: 5px;
   padding: 5px;
 }
+
+.buscador {
+  background-color: yellow;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 500px;
+}

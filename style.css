@@ -35,6 +35,9 @@ header{
   margin-top: 20px;
   margin-left: 500px;
   margin-bottom: 50px;
+  border-style: solid;
+  border-color: green;
+  
 }
 
 .titulo {
@@ -86,4 +89,14 @@ header{
   border-style: solid;
   border-color: yellow;
   border-width: 3px;
+}
+
+#randomBtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+
+#randomBtn:active {
+  transform: translateY(-3px);
 }

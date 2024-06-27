@@ -15,12 +15,21 @@ body{
 
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .logo{
   height: 80px;
-  position: absolute;
-  margin-top: -70px;
+
   
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-grow: unset;
 }
 
 #randomBtn {
@@ -30,11 +39,9 @@ body{
   padding: 25px;
   padding-left: 100px;
   padding-right: 100px;
-  margin-top: 20px;
-  margin-left: 500px;
-  margin-bottom: 50px;
   border-style: solid;
   border-color: rgb(0, 0, 0);
+  margin-bottom: 100px;
   
 }
 

@@ -12,7 +12,7 @@ body{
   text-decoration: none;
   text-align: end;
   text-decoration: none;
-  
+
 }
 
 
@@ -97,4 +97,9 @@ body{
 
 #randomBtn:active {
   transform: translateY(-3px);
+}
+
+.texto {
+  margin: 5px;
+  padding: 5px;
 }

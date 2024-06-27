@@ -1,27 +1,68 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const pokedex = document.querySelector("#pokedex");
+const botonesHeader = document.querySelectorAll(".btn-header");
+
+for (let i = 1; i <= 251; i++) {
+    fetch("https://pokeapi.co/api/v2/pokemon/" + i)
+        .then((response) => response.json())
+        .then(data => mostrarPokemon(data))
+}
+
+function mostrarPokemon(pokemon) {
+
+    let tipos = pokemon.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`);
+    tipos = tipos.join('');
+
+    let pokeId = pokemon.id.toString();
+    if (pokeId.length === 1) {
+        pokeId = "00" + pokeId;
+    } else if (pokeId.length === 2) {
+        pokeId = "0" + pokeId;
+    }
 
 
+    const div = document.createElement("div");
+    div.classList.add("pokemon");
+    div.innerHTML = `
+        <p class="pokemon-id-back">#${pokeId}</p>
+        <div class="pokemon-imagen">
+            <img src="${pokemon.sprites.other["official-artwork"].front_default}" alt="${pokemon.name}">
+        </div>
+        <div class="pokemon-info">
+            <div class="nombre-contenedor">
+                <p class="pokemon-id">#${pokeId}</p>
+                <h2 class="pokemon-nombre">${pokemon.name}</h2>
+            </div>
+            <div class="pokemon-tipos">
+                ${tipos}
+            </div>
+            <div class="pokemon-stats">
+                <p class="stat">${pokemon.height}m</p>
+                <p class="stat">${pokemon.weight}kg</p>
+            </div>
+        </div>
+    `;
+    pokedex.append(div);
+}
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
+    const botonId = event.currentTarget.id;
 
-setupCounter(document.querySelector('#counter'))
+    pokedex.innerHTML = "";
 
+    for (let i = 1; i <= 251; i++) {
+        fetch("https://pokeapi.co/api/v2/pokemon/" + i)
+            .then((response) => response.json())
+            .then(data => {
+
+                if(botonId === "ver-todos") {
+                    mostrarPokemon(data);
+                } else {
+                    const tipos = data.types.map(type => type.type.name);
+                    if (tipos.some(tipo => tipo.includes(botonId))) {
+                        mostrarPokemon(data);
+                    }
+                }
+
+            })
+    }
+}))

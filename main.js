@@ -1,5 +1,7 @@
 const pokedex = document.querySelector("#pokedex");
 const botonesHeader = document.querySelectorAll(".btn-header");
+const buscador = document.getElementById("buscador");
+
 
 for (let i = 1; i <= 493; i++) {
     fetch("https://pokeapi.co/api/v2/pokemon/" + i)
@@ -44,6 +46,7 @@ function mostrarPokemon(pokemon) {
         </div>
     `;
     pokedex.append(div);
+
 }
 
 botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
@@ -68,3 +71,16 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
             })
     }
 }))
+
+buscador.addEventListener("keyup", e => {
+    if(e.target.matches("#buscador")) {
+        document.querySelectorAll(".card").forEach(poke => {
+            poke.textContent.toLowerCase().includes(e.target.value)
+            ? poke.classList.remove("filtro")
+            : poke.classList.add("filtro")
+
+        })
+    }
+})
+
+

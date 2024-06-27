@@ -313,3 +313,7 @@ ul button:active {
 .card:hover {
     box-shadow: white (1,0,0,0);
 }
+
+.filtro {
+  display: none;
+}

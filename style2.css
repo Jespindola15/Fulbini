@@ -317,3 +317,7 @@ ul button:active {
 .filtro {
   display: none;
 }
+.texto {
+  margin: 5px;
+  padding: 5px;
+}

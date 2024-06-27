@@ -96,11 +96,15 @@ h1{
   }
   
   body{
-    background-image: url(/Imagenes/fondopoke.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
+  .bodyteam{
+    background-image: url(/Imagenes/fondopoke.jpg);
+  }
+
   header{
     background-color: black;
   }

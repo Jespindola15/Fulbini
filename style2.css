@@ -319,12 +319,10 @@ ul button:active {
     box-shadow: white (1,0,0,0);
 }
 
-<<<<<<< HEAD
 .filtro {
   display: none;
-=======
-.texto{
+}
+.texto {
   margin: 5px;
   padding: 5px;
->>>>>>> bce5026c7bcdb4b16d584c8ab772495e429758dd
 }

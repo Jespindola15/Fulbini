@@ -43,6 +43,42 @@ button {
     border-radius: 0;
 }
 
+h1{
+    color: rgb(255, 255, 255);
+  }
+  
+  body{
+    background-image: url(/Imagenes/fondopoke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header{
+    background-color: black;
+  }
+  .Navbar{
+    padding: 50px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: end;
+  }
+  
+  .logo{
+    height: 80px;
+    position: absolute;
+    margin-top: -70px;
+    
+  }
+  
+  #randomBtn {
+    margin-top: 200px;
+  }
+  
+  .titulo {
+    color: white;
+  }
+  
+
 /* Aquí todo el CSS extra */
 
 

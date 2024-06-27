@@ -339,3 +339,36 @@ ul button:active {
   justify-content: center;
 }
 
+
+@media screen and (max-width:1050px) {
+  #pokeCard {
+    grid-template-areas: "pokemon1 pokemon2"
+                         "pokemon3 pokemon4"
+                         "pokemon5 pokemon6";
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #pokeCard {
+    grid-template-areas: "pokemon1"
+                         "pokemon2"
+                         "pokemon3" 
+                         "pokemon4"
+                         "pokemon5" 
+                         "pokemon6";
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  #randomBtn {
+    padding: 30px;
+  }
+
+  #pokeCard {
+    margin: 0px;
+  }
+  .pokemon1 {
+    margin: 30px;
+  }
+}

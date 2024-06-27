@@ -251,6 +251,7 @@ button {
   gap: .5rem;
 }
 
+
 .btn-header {
   background-color: var(--clr-gray);
   padding: .5rem;
@@ -268,3 +269,25 @@ button {
   padding: 90px;
 }
 
+ul button{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+ ul button:hover {
+  transform: scale(1.1); 
+ 
+}
+
+ul button:active {
+  transform: scale(0.9);
+}

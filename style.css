@@ -3,14 +3,17 @@ h1{
 }
 
 body{
-  background-color: rgb(89, 90, 163);
+  background-color: rgb(255, 255, 255);
 }
 
 .Texto{
   background-color: yellow;
 }
 .Navbar{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   padding: 50px;
   margin: 10px;
+  text-decoration: none;
+  text-align: center;
+
 }

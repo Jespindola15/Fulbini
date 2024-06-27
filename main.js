@@ -23,21 +23,23 @@ function mostrarPokemon(pokemon) {
     const div = document.createElement("div");
     div.classList.add("pokemon");
     div.innerHTML = `
-        <p class="pokemon-id-back">#${pokeId}</p>
-        <div class="pokemon-imagen">
-            <img src="${pokemon.sprites.other["official-artwork"].front_default}" alt="${pokemon.name}">
-        </div>
-        <div class="pokemon-info">
-            <div class="nombre-contenedor">
-                <p class="pokemon-id">#${pokeId}</p>
-                <h2 class="pokemon-nombre">${pokemon.name}</h2>
+        <div class="card">
+            <p class="pokemon-id-back">#${pokeId}</p>
+            <div class="pokemon-imagen">
+                <img src="${pokemon.sprites.other["official-artwork"].front_default}" height= "100px" width= "100px"  alt="${pokemon.name}">
             </div>
-            <div class="pokemon-tipos">
-                ${tipos}
-            </div>
-            <div class="pokemon-stats">
-                <p class="stat">${pokemon.height}m</p>
-                <p class="stat">${pokemon.weight}kg</p>
+            <div class="pokemon-info">
+                <div class="nombre-contenedor">
+                    <p class="pokemon-id">#${pokeId}</p>
+                    <h2 class="pokemon-nombre">${pokemon.name}</h2>
+                </div>
+                <div class="pokemon-tipos">
+                    ${tipos}
+                </div>
+                <div class="pokemon-stats">
+                    <p class="stat">${pokemon.height}m</p>
+                    <p class="stat">${pokemon.weight}kg</p>
+                </div>
             </div>
         </div>
     `;

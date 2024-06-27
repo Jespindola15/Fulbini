@@ -1,7 +1,7 @@
 const pokedex = document.querySelector("#pokedex");
 const botonesHeader = document.querySelectorAll(".btn-header");
 
-for (let i = 1; i <= 251; i++) {
+for (let i = 1; i <= 493; i++) {
     fetch("https://pokeapi.co/api/v2/pokemon/" + i)
         .then((response) => response.json())
         .then(data => mostrarPokemon(data))

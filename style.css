@@ -6,7 +6,6 @@ body{
   background-image: url(/Imagenes/fondopoke.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 
@@ -16,4 +15,11 @@ body{
   margin: 10px;
   text-decoration: none;
   text-align: center;
+}
+
+.logo{
+  height: 300px;
+  position: absolute;
+  margin-top: -200px;
+  
 }

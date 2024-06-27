@@ -26,7 +26,15 @@ header{
 }
 
 #randomBtn {
-  margin-top: 200px;
+  background-color: aquamarine;
+  font-size: large;
+  border-radius: 50px;
+  padding: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-bottom: 50px;
 }
 
 .titulo {
@@ -43,7 +51,8 @@ header{
       "pokemon1 pokemon2 pokemon3"
       "pokemon4 pokemon5 pokemon6";
     margin: auto;
-    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .pokemon1{
@@ -63,4 +72,18 @@ header{
 }
 .pokemon6 {
   grid-area: pokemon6;
+}
+
+.pokemon1,
+.pokemon2,
+.pokemon3,
+.pokemon4,
+.pokemon5,
+.pokemon6{
+  background-color: black;
+  padding-left: 100px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 3px;
 }
